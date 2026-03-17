@@ -4,15 +4,17 @@
 
 修改了原代码在树莓派3B上的部分问题。
 
+![](./assets/lamp.png)
+
 ## 概述
 
-LeLamp Runtime is a Python-based control system that interfaces with the hardware components of LeLamp including:
+代码基于python，硬件资源包含以下部分:
 
-- Servo motors for articulated movement
-- Audio system (microphone and speaker)
-- RGB LED lighting
-- Camera system
-- Voice interaction capabilities
+- 五个STS3215串口总线舵机
+- 音频扩展板 (含麦克风和单声道喇叭)
+- WS2812灯板
+- UVC摄像头模块
+- 主控树莓派开发板（zero2w/3b/4b/5）
 
 ## 代码结构
 
@@ -35,3 +37,5 @@ lelamp_runtime/
 
 ## 运行环境安装
 
+
+## 功能扩展
