@@ -196,7 +196,7 @@ async def with_zhipu():
     for sig in (signal.SIGINT, signal.SIGTERM):
         signal.signal(sig, handle_shutdown)
 
-    api_key = "505271f551164c2ea295229048488383.K0Eb08NhC0dolAnO" #get_env_var("ZHIPU_API_KEY")
+    api_key = get_env_var("ZHIPU_API_KEY")
     
     try:
         async with RTLowLevelClient(
